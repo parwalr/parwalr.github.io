@@ -39,6 +39,7 @@ body {
     }
 
     .links {
+      font-size: 26px;
       @media only screen and (max-width: 480px) {
         font-size: 18px;
       }
@@ -94,7 +95,7 @@ body {
       width: 65%;
       margin: 10px;
 
-      @media only screen and (max-width: 480px) {
+      @media only screen and (max-width: 1023px) {
         width: 100%;
       }
 
@@ -133,7 +134,7 @@ body {
       width: 25%;
       padding: 0 10px;
 
-      @media only screen and (max-width: 480px) {
+      @media only screen and (max-width: 1023px) {
         width: 100%;
         display: block;
         margin-bottom: 20px;
@@ -206,11 +207,6 @@ body {
           flex-wrap: wrap;
           padding: 0px;
           // justify-content: space-between;
-
-          @media only screen and (max-width: 480px) {
-            // justify-content: space-around;
-            // margin: 0 3px;
-          }
         }
 
         #bigicon {
