@@ -31,6 +31,12 @@ body .header h3 {
   color: #ffb81c;
 }
 
+@media only screen and (max-width: 480px) {
+  body .header .links {
+    font-size: 18px;
+  }
+}
+
 body .header a,
 body .header a:visited {
   text-decoration: none;
@@ -86,6 +92,12 @@ body #about .aboutinfo {
   margin: 10px;
 }
 
+@media only screen and (max-width: 480px) {
+  body #about .aboutinfo {
+    width: 100%;
+  }
+}
+
 body #about .aboutinfo h3 {
   color: #ffb81c;
 }
@@ -93,6 +105,7 @@ body #about .aboutinfo h3 {
 body #about .aboutinfo p {
   font-size: 18px;
   margin: 10;
+  text-align: left;
 }
 
 body #about .aboutinfo .school {
@@ -123,6 +136,14 @@ body #skills .column {
   float: left;
   width: 25%;
   padding: 0 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  body #skills .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 body #skills .row {
@@ -179,6 +200,12 @@ body #projects .project .info {
   font-size: 20px;
 }
 
+@media only screen and (max-width: 480px) {
+  body #projects .project .info {
+    width: 100%;
+  }
+}
+
 body #projects .project .info span {
   color: #ffb81c;
 }
@@ -195,9 +222,6 @@ body #projects .project .info ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 body #projects .project .info #bigicon {
@@ -205,15 +229,37 @@ body #projects .project .info #bigicon {
   height: 75px;
 }
 
+@media only screen and (max-width: 480px) {
+  body #projects .project .info #bigicon {
+    width: 50px;
+    height: 25px;
+  }
+}
+
 body #projects .project .info img {
   width: 75px;
   height: 75px;
+}
+
+@media only screen and (max-width: 480px) {
+  body #projects .project .info img {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 body #projects .project img {
   height: 460px;
   width: 308px;
   margin: 0 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  body #projects .project img {
+    height: 360px;
+    width: 240px;
+    margin: 0 20px;
+  }
 }
 
 body #projects .project .pic:hover {
@@ -228,7 +274,7 @@ body #footer {
 }
 
 body #footer p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 body #footer .social {
@@ -286,6 +332,12 @@ body .testing ul {
           justify-content: center;
 }
 
+@media only screen and (max-width: 480px) {
+  body .testing ul {
+    padding: 0;
+  }
+}
+
 body .testing ul li {
   position: relative;
   background: white;
@@ -302,6 +354,14 @@ body .testing ul li {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 480px) {
+  body .testing ul li {
+    width: 60px;
+    height: 60px;
+    margin: 0px 3px;
+  }
+}
+
 body .testing ul li .fab {
   font-size: 26px;
   position: absolute;
@@ -311,6 +371,12 @@ body .testing ul li .fab {
           transform: translate(-50%, -50%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media only screen and (max-width: 480px) {
+  body .testing ul li .fab {
+    font-size: 18px;
+  }
 }
 
 body .testing ul li:nth-child(1) {
