@@ -1,0 +1,351 @@
+$padding: 15px;
+$borders: 15px;
+$margin: 10px;
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+  // background: radial-gradient(#8bb8e8, #005587, #003b5c);
+  background: #003b5c;
+  color: white;
+
+  .container {
+    padding: $padding;
+    border: border orange 1px;
+    width: 98%;
+    // margin: auto;
+  }
+
+  .header {
+    text-align: center;
+    margin: $margin;
+    // clip-path: polygon(0 0, 100% 0%, 100% 83%, 0 100%);
+
+    h1 {
+      margin: 0;
+      font-weight: bold;
+      // color: black;
+    }
+
+    h3 {
+      color: #ffb81c;
+      // font-weight: bold;
+    }
+
+    a,
+    a:visited {
+      text-decoration: none;
+      position: relative;
+      color: white;
+
+      &:after {
+        content: "";
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        background: white;
+        transition: 0.5s;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
+
+      &.block {
+        display: block;
+        padding: 0.5em;
+
+        &:hover {
+          background: white;
+        }
+      }
+    }
+  }
+
+  #about {
+    padding: $padding;
+    margin: $margin;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+
+    .selfimg {
+      img {
+        width: 300px;
+        height: 420px;
+        // margin: 10px 0;
+        border-radius: 3%;
+      }
+    }
+    .aboutinfo {
+      vertical-align: middle;
+      width: 65%;
+      margin: 10px;
+
+      h3 {
+        color: #ffb81c;
+      }
+
+      p {
+        font-size: 18px;
+        margin: 10;
+      }
+
+      .school {
+        margin: 0px;
+        padding: 0;
+      }
+
+      .years {
+        font-size: 14px;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+    }
+  }
+  #skills {
+    padding: $padding;
+    margin: $margin;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+
+    /* Remove extra left and right margins, due to padding in columns */
+    .row {
+      margin: 0 -5px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Style the counter cards */
+    .card {
+      color: black;
+      box-shadow: 0 4px 8px 0 rgba(0, 85, 135, 0.6); /* this adds the "card" effect */
+      padding: 16px;
+      height: 300px;
+      text-align: center;
+      background-color: #8bb8e8;
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          font-size: 18px;
+        }
+      }
+    }
+    .card:hover {
+      transform: scale(1.1);
+      opacity: 0.8;
+      // background: #005dff;
+    }
+  }
+  #projects {
+    padding: $padding;
+    margin: 25px $margin;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    .project {
+      // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 10px 0;
+      .info {
+        width: 66%;
+        vertical-align: top;
+        margin: 0 10px;
+        font-size: 20px;
+
+        span {
+          color: #ffb81c;
+        }
+
+        a {
+          color: #8bb8e8;
+        }
+
+        ul {
+          list-style-type: none;
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0px;
+          justify-content: space-between;
+        }
+
+        #bigicon {
+          width: 175px;
+          height: 75px;
+        }
+
+        img {
+          width: 75px;
+          height: 75px;
+        }
+      }
+
+      img {
+        height: 460px;
+        width: 308px;
+        margin: 0 10px;
+      }
+
+      .pic:hover {
+        transform: scale(1.25);
+      }
+    }
+  }
+  #footer {
+    padding: $padding;
+    margin: $margin;
+    text-align: center;
+
+    p {
+      font-size: 18px;
+    }
+
+    .social {
+      text-align: center;
+      font-size: 2.5em;
+      color: white;
+      overflow: hidden;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      i {
+        margin: 0.3em;
+        cursor: pointer;
+        transition: color 300ms ease, margin-top 300ms ease;
+        transform: translateZ(0);
+
+        &:hover {
+          margin-top: -1px;
+        }
+
+        &#facebook:hover {
+          color: #4267b1;
+        }
+
+        &#twitter:hover {
+          color: #77ddf6;
+        }
+
+        &#github:hover {
+          color: black;
+        }
+
+        &#linkedin:hover {
+          color: #0177b5;
+        }
+
+        &#mail:hover {
+          color: #f7b401;
+        }
+      }
+    }
+  }
+  .testing {
+    ul {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+    ul li {
+      position: relative;
+      background: white;
+      width: 60px;
+      height: 60px;
+      margin: 0 20px;
+      border: 3px solid;
+      border-radius: 50%;
+      box-sizing: border-box;
+      cursor: pointer;
+      transition: 0.5s;
+      overflow: hidden;
+    }
+    ul li .fab {
+      font-size: 26px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.5s;
+    }
+    ul li:nth-child(1) {
+      border-color: #2478b5;
+    }
+    ul li:nth-child(1) .fab {
+      color: #2478b5;
+    }
+    ul li:nth-child(2) {
+      border-color: black;
+    }
+    ul li:nth-child(2) .fab {
+      color: black;
+    }
+    ul li:nth-child(3) {
+      border-color: #4267b2;
+    }
+    ul li:nth-child(3) .fab {
+      color: #4267b2;
+    }
+    ul li:nth-child(4) {
+      border-color: #d34836;
+    }
+    ul li:nth-child(4) .fab {
+      color: #d34836;
+    }
+    ul li:nth-child(5) {
+      border-color: #34a2f2;
+    }
+    ul li:nth-child(5) .fab {
+      color: #34a2f2;
+    }
+    ul li:hover:nth-child(1) {
+      background: #2478b5;
+    }
+    ul li:hover:nth-child(2) {
+      background: black;
+    }
+    ul li:hover:nth-child(3) {
+      background: #4267b2;
+    }
+    ul li:hover:nth-child(4) {
+      background: #d34836;
+    }
+    ul li:hover:nth-child(5) {
+      background: #34a2f2;
+    }
+    ul li .fab:nth-child(1) {
+      left: -50%;
+      opacity: 0;
+    }
+    ul li:hover .fab:nth-child(1) {
+      left: 50%;
+      opacity: 1;
+      color: white;
+    }
+    ul li:hover .fab:nth-child(2) {
+      left: 150%;
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,391 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+  background: #003b5c;
+  color: white;
+}
+
+body .container {
+  padding: 15px;
+  border: border orange 1px;
+  width: 98%;
+}
+
+body .header {
+  text-align: center;
+  margin: 10px;
+}
+
+body .header h1 {
+  margin: 0;
+  font-weight: bold;
+}
+
+body .header h3 {
+  color: #ffb81c;
+}
+
+body .header a,
+body .header a:visited {
+  text-decoration: none;
+  position: relative;
+  color: white;
+}
+
+body .header a:after,
+body .header a:visited:after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .header a:hover:after,
+body .header a:visited:hover:after {
+  width: 100%;
+}
+
+body .header a.block,
+body .header a:visited.block {
+  display: block;
+  padding: 0.5em;
+}
+
+body .header a.block:hover,
+body .header a:visited.block:hover {
+  background: white;
+}
+
+body #about {
+  padding: 15px;
+  margin: 10px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+body #about .selfimg img {
+  width: 300px;
+  height: 420px;
+  border-radius: 3%;
+}
+
+body #about .aboutinfo {
+  vertical-align: middle;
+  width: 65%;
+  margin: 10px;
+}
+
+body #about .aboutinfo h3 {
+  color: #ffb81c;
+}
+
+body #about .aboutinfo p {
+  font-size: 18px;
+  margin: 10;
+}
+
+body #about .aboutinfo .school {
+  margin: 0px;
+  padding: 0;
+}
+
+body #about .aboutinfo .years {
+  font-size: 14px;
+}
+
+body #about .aboutinfo .italic {
+  font-style: italic;
+}
+
+body #skills {
+  padding: 15px;
+  margin: 10px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  /* Float four columns side by side */
+  /* Remove extra left and right margins, due to padding in columns */
+  /* Clear floats after the columns */
+  /* Style the counter cards */
+}
+
+body #skills .column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+body #skills .row {
+  margin: 0 -5px;
+}
+
+body #skills .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body #skills .card {
+  color: black;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 85, 135, 0.6);
+          box-shadow: 0 4px 8px 0 rgba(0, 85, 135, 0.6);
+  /* this adds the "card" effect */
+  padding: 16px;
+  height: 300px;
+  text-align: center;
+  background-color: #8bb8e8;
+}
+
+body #skills .card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body #skills .card ul li {
+  font-size: 18px;
+}
+
+body #skills .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.8;
+}
+
+body #projects {
+  padding: 15px;
+  margin: 25px 10px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+body #projects .project {
+  padding: 10px 0;
+}
+
+body #projects .project .info {
+  width: 66%;
+  vertical-align: top;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+body #projects .project .info span {
+  color: #ffb81c;
+}
+
+body #projects .project .info a {
+  color: #8bb8e8;
+}
+
+body #projects .project .info ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #projects .project .info #bigicon {
+  width: 175px;
+  height: 75px;
+}
+
+body #projects .project .info img {
+  width: 75px;
+  height: 75px;
+}
+
+body #projects .project img {
+  height: 460px;
+  width: 308px;
+  margin: 0 10px;
+}
+
+body #projects .project .pic:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+body #footer {
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+}
+
+body #footer p {
+  font-size: 18px;
+}
+
+body #footer .social {
+  text-align: center;
+  font-size: 2.5em;
+  color: white;
+  overflow: hidden;
+}
+
+body #footer .social a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body #footer .social i {
+  margin: 0.3em;
+  cursor: pointer;
+  -webkit-transition: color 300ms ease, margin-top 300ms ease;
+  transition: color 300ms ease, margin-top 300ms ease;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+body #footer .social i:hover {
+  margin-top: -1px;
+}
+
+body #footer .social i#facebook:hover {
+  color: #4267b1;
+}
+
+body #footer .social i#twitter:hover {
+  color: #77ddf6;
+}
+
+body #footer .social i#github:hover {
+  color: black;
+}
+
+body #footer .social i#linkedin:hover {
+  color: #0177b5;
+}
+
+body #footer .social i#mail:hover {
+  color: #f7b401;
+}
+
+body .testing ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .testing ul li {
+  position: relative;
+  background: white;
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+  border: 3px solid;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+body .testing ul li .fab {
+  font-size: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .testing ul li:nth-child(1) {
+  border-color: #2478b5;
+}
+
+body .testing ul li:nth-child(1) .fab {
+  color: #2478b5;
+}
+
+body .testing ul li:nth-child(2) {
+  border-color: black;
+}
+
+body .testing ul li:nth-child(2) .fab {
+  color: black;
+}
+
+body .testing ul li:nth-child(3) {
+  border-color: #4267b2;
+}
+
+body .testing ul li:nth-child(3) .fab {
+  color: #4267b2;
+}
+
+body .testing ul li:nth-child(4) {
+  border-color: #d34836;
+}
+
+body .testing ul li:nth-child(4) .fab {
+  color: #d34836;
+}
+
+body .testing ul li:nth-child(5) {
+  border-color: #34a2f2;
+}
+
+body .testing ul li:nth-child(5) .fab {
+  color: #34a2f2;
+}
+
+body .testing ul li:hover:nth-child(1) {
+  background: #2478b5;
+}
+
+body .testing ul li:hover:nth-child(2) {
+  background: black;
+}
+
+body .testing ul li:hover:nth-child(3) {
+  background: #4267b2;
+}
+
+body .testing ul li:hover:nth-child(4) {
+  background: #d34836;
+}
+
+body .testing ul li:hover:nth-child(5) {
+  background: #34a2f2;
+}
+
+body .testing ul li .fab:nth-child(1) {
+  left: -50%;
+  opacity: 0;
+}
+
+body .testing ul li:hover .fab:nth-child(1) {
+  left: 50%;
+  opacity: 1;
+  color: white;
+}
+
+body .testing ul li:hover .fab:nth-child(2) {
+  left: 150%;
+  opacity: 0;
+}
+/*# sourceMappingURL=main.css.map */
