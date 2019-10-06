@@ -112,6 +112,11 @@ body #about .aboutinfo p {
   text-align: left;
 }
 
+body #about .aboutinfo p a {
+  color: #8bb8e8;
+  text-decoration: none;
+}
+
 body #about .aboutinfo .school {
   margin: 0px;
   padding: 0;
@@ -220,6 +225,7 @@ body #projects .project .info .fab {
 
 body #projects .project .info a {
   color: #8bb8e8;
+  text-decoration: none;
 }
 
 body #projects .project .info ul {
