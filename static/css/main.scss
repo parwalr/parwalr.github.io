@@ -39,9 +39,11 @@ body {
     }
 
     .links {
-      font-size: 26px;
       @media only screen and (max-width: 480px) {
         font-size: 18px;
+      }
+      @media only screen and (min-width: 481px) {
+        font-size: 26px;
       }
     }
 
@@ -88,282 +90,290 @@ body {
         height: 420px;
         // margin: 10px 0;
         border-radius: 3%;
+
+        @media only screen and (max-width: 899px) {
+          margin: 0 auto;
+        }
       }
     }
     .aboutinfo {
-      vertical-align: middle;
-      width: 65%;
-      margin: 10px;
+      @media only screen and (max-width: 899px) {
+        width: 100%;
+      }
+      // @media only screen and (min-width: 481px) {
+      //   width: 30%;
+      // }
+      @media only screen and (min-width: 900px) {
+        vertical-align: middle;
+        width: 65%;
+        margin: 10px;
+      }
+    }
 
-      @media only screen and (max-width: 1023px) {
+    h3 {
+      color: #ffb81c;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 10;
+      text-align: left;
+
+      a {
+        color: #8bb8e8;
+        text-decoration: none;
+      }
+    }
+
+    .school {
+      margin: 0px;
+      padding: 0;
+    }
+
+    .years {
+      font-size: 14px;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+  }
+}
+#skills {
+  padding: $padding;
+  margin: $margin;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+
+    @media only screen and (max-width: 1023px) {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {
+    margin: 0 -5px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Style the counter cards */
+  .card {
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 85, 135, 0.6); /* this adds the "card" effect */
+    padding: 16px;
+    height: 300px;
+    text-align: center;
+    background-color: #8bb8e8;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        font-size: 18px;
+      }
+    }
+  }
+  .card:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    // background: #005dff;
+  }
+}
+#projects {
+  padding: $padding;
+  margin: 25px $margin;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  .project {
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    .info {
+      width: 66%;
+      vertical-align: top;
+      margin: 0 10px;
+      font-size: 20px;
+      @media only screen and (max-width: 480px) {
         width: 100%;
       }
 
-      h3 {
+      span {
         color: #ffb81c;
       }
 
-      p {
-        font-size: 18px;
-        margin: 10;
-        text-align: left;
-
-        a {
-          color: #8bb8e8;
-          text-decoration: none;
-        }
+      .fab {
+        color: black;
       }
 
-      .school {
-        margin: 0px;
-        padding: 0;
+      a {
+        color: #8bb8e8;
+        text-decoration: none;
       }
-
-      .years {
-        font-size: 14px;
-      }
-
-      .italic {
-        font-style: italic;
-      }
-    }
-  }
-  #skills {
-    padding: $padding;
-    margin: $margin;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
-
-    /* Float four columns side by side */
-    .column {
-      float: left;
-      width: 25%;
-      padding: 0 10px;
-
-      @media only screen and (max-width: 1023px) {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-      }
-    }
-
-    /* Remove extra left and right margins, due to padding in columns */
-    .row {
-      margin: 0 -5px;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    /* Style the counter cards */
-    .card {
-      color: black;
-      box-shadow: 0 4px 8px 0 rgba(0, 85, 135, 0.6); /* this adds the "card" effect */
-      padding: 16px;
-      height: 300px;
-      text-align: center;
-      background-color: #8bb8e8;
 
       ul {
         list-style-type: none;
-        padding: 0;
-
-        li {
-          font-size: 18px;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+        // justify-content: space-between;
       }
-    }
-    .card:hover {
-      transform: scale(1.1);
-      opacity: 0.8;
-      // background: #005dff;
-    }
-  }
-  #projects {
-    padding: $padding;
-    margin: 25px $margin;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
-    .project {
-      // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      padding: 10px 0;
-      .info {
-        width: 66%;
-        vertical-align: top;
-        margin: 0 10px;
-        font-size: 20px;
+
+      #bigicon {
+        width: 175px;
+        height: 75px;
+
         @media only screen and (max-width: 480px) {
-          width: 100%;
-        }
-
-        span {
-          color: #ffb81c;
-        }
-
-        .fab {
-          color: black;
-        }
-
-        a {
-          color: #8bb8e8;
-          text-decoration: none;
-        }
-
-        ul {
-          list-style-type: none;
-          display: flex;
-          flex-wrap: wrap;
-          padding: 0px;
-          // justify-content: space-between;
-        }
-
-        #bigicon {
-          width: 175px;
-          height: 75px;
-
-          @media only screen and (max-width: 480px) {
-            width: 50px;
-            height: 25px;
-          }
-        }
-
-        img {
-          width: 75px;
-          height: 75px;
-
-          @media only screen and (max-width: 480px) {
-            width: 50px;
-            height: 50px;
-          }
+          width: 50px;
+          height: 25px;
         }
       }
 
       img {
-        height: 460px;
-        width: 308px;
-        margin: 0 10px;
+        width: 75px;
+        height: 75px;
 
         @media only screen and (max-width: 480px) {
-          height: 360px;
-          width: 240px;
-          margin: 0 20px;
+          width: 50px;
+          height: 50px;
         }
       }
-
-      .pic:hover {
-        transform: scale(1.25);
-      }
     }
-  }
-  #footer {
-    padding: $padding;
-    margin: $margin;
-    text-align: center;
 
-    p {
-      font-size: 20px;
-    }
-  }
-  .testing {
-    ul {
-      display: flex;
-      text-align: center;
-      justify-content: center;
+    img {
+      height: 460px;
+      width: 308px;
+      margin: 0 10px;
 
       @media only screen and (max-width: 480px) {
-        padding: 0;
+        height: 360px;
+        width: 240px;
+        margin: 0 20px;
       }
     }
-    ul li {
-      position: relative;
-      background: white;
+
+    .pic:hover {
+      transform: scale(1.25);
+    }
+  }
+}
+#footer {
+  padding: $padding;
+  margin: $margin;
+  text-align: center;
+
+  p {
+    font-size: 20px;
+  }
+}
+.testing {
+  ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 480px) {
+      padding: 0;
+    }
+  }
+  ul li {
+    position: relative;
+    background: white;
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    border: 3px solid;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+
+    @media only screen and (max-width: 480px) {
       width: 60px;
       height: 60px;
-      margin: 0 20px;
-      border: 3px solid;
-      border-radius: 50%;
-      box-sizing: border-box;
-      cursor: pointer;
-      transition: 0.5s;
-      overflow: hidden;
+      margin: 0px 3px;
+    }
+  }
+  ul li .fab {
+    font-size: 26px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
 
-      @media only screen and (max-width: 480px) {
-        width: 60px;
-        height: 60px;
-        margin: 0px 3px;
-      }
+    @media only screen and (max-width: 480px) {
+      font-size: 18px;
     }
-    ul li .fab {
-      font-size: 26px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      transition: 0.5s;
-
-      @media only screen and (max-width: 480px) {
-        font-size: 18px;
-      }
-    }
-    ul li:nth-child(1) {
-      border-color: #2478b5;
-    }
-    ul li:nth-child(1) .fab {
-      color: #2478b5;
-    }
-    ul li:nth-child(2) {
-      border-color: black;
-    }
-    ul li:nth-child(2) .fab {
-      color: black;
-    }
-    ul li:nth-child(3) {
-      border-color: #4267b2;
-    }
-    ul li:nth-child(3) .fab {
-      color: #4267b2;
-    }
-    ul li:nth-child(4) {
-      border-color: #d34836;
-    }
-    ul li:nth-child(4) .fab {
-      color: #d34836;
-    }
-    ul li:nth-child(5) {
-      border-color: #34a2f2;
-    }
-    ul li:nth-child(5) .fab {
-      color: #34a2f2;
-    }
-    ul li:hover:nth-child(1) {
-      background: #2478b5;
-    }
-    ul li:hover:nth-child(2) {
-      background: black;
-    }
-    ul li:hover:nth-child(3) {
-      background: #4267b2;
-    }
-    ul li:hover:nth-child(4) {
-      background: #d34836;
-    }
-    ul li:hover:nth-child(5) {
-      background: #34a2f2;
-    }
-    ul li .fab:nth-child(1) {
-      left: -50%;
-      opacity: 0;
-    }
-    ul li:hover .fab:nth-child(1) {
-      left: 50%;
-      opacity: 1;
-      color: white;
-    }
-    ul li:hover .fab:nth-child(2) {
-      left: 150%;
-      opacity: 0;
-    }
+  }
+  ul li:nth-child(1) {
+    border-color: #2478b5;
+  }
+  ul li:nth-child(1) .fab {
+    color: #2478b5;
+  }
+  ul li:nth-child(2) {
+    border-color: black;
+  }
+  ul li:nth-child(2) .fab {
+    color: black;
+  }
+  ul li:nth-child(3) {
+    border-color: #4267b2;
+  }
+  ul li:nth-child(3) .fab {
+    color: #4267b2;
+  }
+  ul li:nth-child(4) {
+    border-color: #d34836;
+  }
+  ul li:nth-child(4) .fab {
+    color: #d34836;
+  }
+  ul li:nth-child(5) {
+    border-color: #34a2f2;
+  }
+  ul li:nth-child(5) .fab {
+    color: #34a2f2;
+  }
+  ul li:hover:nth-child(1) {
+    background: #2478b5;
+  }
+  ul li:hover:nth-child(2) {
+    background: black;
+  }
+  ul li:hover:nth-child(3) {
+    background: #4267b2;
+  }
+  ul li:hover:nth-child(4) {
+    background: #d34836;
+  }
+  ul li:hover:nth-child(5) {
+    background: #34a2f2;
+  }
+  ul li .fab:nth-child(1) {
+    left: -50%;
+    opacity: 0;
+  }
+  ul li:hover .fab:nth-child(1) {
+    left: 50%;
+    opacity: 1;
+    color: white;
+  }
+  ul li:hover .fab:nth-child(2) {
+    left: 150%;
+    opacity: 0;
   }
 }
